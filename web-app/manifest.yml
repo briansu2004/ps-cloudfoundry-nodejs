@@ -1,0 +1,6 @@
+---
+applications:
+- name: ps-web-app
+  instances: 1
+  memory: 128M
+  command: node ./bin/www

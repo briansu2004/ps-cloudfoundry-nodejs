@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  div(class="container pt-5")
+    div(class="row align-items-center")
+      div(class="col")
+        h1 Animal Food Tracker
+    div(class="row align-items-center pt-5")
+      div(class="col")
+        table(class="table table-bordered table-hover")
+          thead(class="thead-dark")
+            tr
+              th Animal Name
+              th Park Zone
+              th Last Fed
+              th Inventory Level
+          tbody
+            each a in alist
+              tr
+                td= a.name
+                td= a.parkzone
+                td= a.lastfed
+                if (a.isinventorylow)
+                  td(class="table-danger") Low
+                else
+                  td Normal
+  
+  

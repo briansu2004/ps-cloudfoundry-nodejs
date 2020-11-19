@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css')
+
+  body
+    nav(class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" )
+      a(class="navbar-brand" href="#")
+        img(src="/images/lion_White.png" width="45" height="45")
+      a(class="navbar-brand" href="#") Seroter Regional Zoo
+      button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Nav")
+        span(class="navbar-toggler-icon")
+      div(class="collapse navbar-collapse" id="navbarNav")
+        div(class="navbar-nav")
+          a(class="nav-item nav-link active" href="#") Home
+          a(class="nav-item nav-link disabled" href="#") Animal List
+          a(class="nav-item nav-link disabled" href="#") Zookeeper Status
+          a(class="nav-item nav-link disabled" href="#") Inventory Lookup
+
+    block content
